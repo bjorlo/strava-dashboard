@@ -125,15 +125,23 @@ export default async function Dashboard() {
           </p>
           <h1 className="text-3xl font-bold">Mitt treningsdashboard</h1>
 
-<Link
-  href="/dashboard/status"
-  className="inline-block mt-3 text-sm bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg font-medium transition-colors"
->
-  Årets løpestatus →
-</Link>
-        </div>
-      </div>
+          <Link
+            href="/dashboard/status"
+            className="inline-block mt-3 text-sm bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+          >
+            Årets løpestatus →
+          </Link>
 
+          <Link
+            href="/dashboard/heatmap"
+            className="inline-block mt-3 ml-2 text-sm bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+          >
+            Mine ruter →
+          </Link>
+                  </div>
+                </div>
+
+  
       <div className="max-w-3xl mx-auto px-6 -mt-6">
         {/* --- Nøkkeltall-kort, hevet opp over headeren med skygge --- */}
         <section className="grid grid-cols-3 gap-4 mb-10">
@@ -156,7 +164,7 @@ export default async function Dashboard() {
             <p className="text-sm text-neutral-500 mt-1">minutter</p>
           </div>
                </section>
-               
+
           <WeeklySummary
           activityCount={lastWeekActivities.length}
           totalKm={metersToKm(totalDistanceThisWeek)}
