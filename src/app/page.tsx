@@ -8,7 +8,12 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center gap-4">
-      <h1 className="text-2xl font-bold">Mitt Strava-dashboard</h1>
+      <h1
+  className="text-4xl font-bold tracking-wide uppercase"
+  style={{ fontFamily: "var(--font-oswald)" }}
+>
+  Mitt treningsdashboard
+</h1>
       {/* Knappen sender brukeren til Strava for godkjenning.
           Selve innloggingen skjer ikke i min app, men
           videresender til Strava, som håndterer selve autentiseringen. */}
