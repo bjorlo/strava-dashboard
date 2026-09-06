@@ -138,6 +138,13 @@ export default async function Dashboard() {
           >
             Mine ruter →
           </Link>
+
+          <Link
+            href="/dashboard/route_finder"
+            className="inline-block mt-3 ml-2 text-sm bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+          >
+            Finn en rute →
+          </Link>
                   </div>
                 </div>
 
