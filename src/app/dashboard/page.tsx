@@ -191,9 +191,11 @@ export default async function Dashboard() {
             Siste aktiviteter
           </h2>
           <div className="bg-white rounded-xl shadow-sm border border-neutral-100 divide-y divide-neutral-100">
+
             {activities.slice(0, 10).map((activity) => (
-              <div
+              <Link
                 key={activity.id}
+                href={`/dashboard/activity/${activity.id}`}
                 className="flex items-center justify-between p-4 hover:bg-neutral-50 transition-colors"
               >
                 <div className="flex items-center gap-3">
@@ -209,7 +211,7 @@ export default async function Dashboard() {
                     </p>
                   </div>
                 </div>
-                              <div className="text-right">
+                <div className="text-right">
                 {activity.distance > 0 ? (
                   <>
                     <p className="font-semibold text-neutral-900">
@@ -225,7 +227,7 @@ export default async function Dashboard() {
                   </p>
                 )}
               </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

@@ -12,7 +12,7 @@ export default function Home() {
   className="text-4xl font-bold tracking-wide uppercase"
   style={{ fontFamily: "var(--font-oswald)" }}
 >
-  Mitt treningsdashboard
+  Min treningshverdag
 </h1>
       {/* Knappen sender brukeren til Strava for godkjenning.
           Selve innloggingen skjer ikke i min app, men
@@ -21,7 +21,7 @@ export default function Home() {
         href={stravaAuthUrl}
         className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600"
       >
-        Logg inn med Strava
+        Logg inn med Strava-bruker
       </a>
     </main>
   );
